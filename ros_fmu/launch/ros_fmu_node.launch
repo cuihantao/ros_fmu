@@ -1,0 +1,6 @@
+<launch>
+  <arg name="fmu_path" />
+  <node name="ros_fmu_node" pkg="ros_fmu" type="node">
+    <param name="fmu_path" value="$(arg fmu_path)" />
+  </node>
+</launch>
